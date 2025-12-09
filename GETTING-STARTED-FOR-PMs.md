@@ -15,20 +15,20 @@
 
 ### Finding Components
 Look in Cursor's sidebar:
-- **Base Components** → `components/base/` folder
+- **UI Components** → `components/ui/` folder
   - button.tsx
   - card.tsx
   - input.tsx
   - label.tsx
 
-- **Branded Components** → `components/branded/` folder
+- **Custom Components** → `components/custom/` folder
   - (Your designer will add custom-styled components here)
 
 ### Using a Component in Your Prototype
 
 **Step 1:** Import the component at the top of your file
 ```tsx
-import { Button } from '@/components/base/button'
+import { Button } from '@/components/ui/button'
 ```
 
 **Step 2:** Use it in your code
@@ -38,8 +38,8 @@ import { Button } from '@/components/base/button'
 
 ### Example: Creating a Simple Page
 ```tsx
-import { Button } from '@/components/base/button'
-import { Card } from '@/components/base/card'
+import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card'
 
 export default function MyPage() {
   return (
@@ -76,7 +76,7 @@ export default function MyPage() {
 - ✅ Pull updates regularly
 
 **DON'T:**
-- ❌ Edit files in `components/base/` or `components/branded/`
+- ❌ Edit files in `components/ui/` or `components/custom/`
 - ❌ Delete or rename component files
 - ❌ Push changes to GitHub (you won't have permission anyway)
 

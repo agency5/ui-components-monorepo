@@ -3,8 +3,8 @@
 **Shared design system for consistent UI/UX across prototypes and production apps.**
 
 This repository contains a 3-layer component system:
-1. **Base Layer** - Original shadcn/ui components (`components/base/`)
-2. **Branded Layer** - Custom-styled components from Figma (`components/branded/`)
+1. **UI Layer** - Original shadcn/ui components (`components/ui/`)
+2. **Custom Layer** - Custom-styled components from Figma (`components/custom/`)
 3. **Consumption Layer** - Product managers and developers import read-only components
 
 ---
@@ -15,7 +15,7 @@ This repository contains a 3-layer component system:
 → Read: [GETTING-STARTED-FOR-PMs.md](./GETTING-STARTED-FOR-PMs.md)
 
 ### For Designers
-→ Read: [components/branded/README.md](./components/branded/README.md)
+→ Read: [components/custom/README.md](./components/custom/README.md)
 
 ### For Developers
 → Continue reading below
@@ -35,14 +35,14 @@ npm install
 
 **Option A: Work directly in this repo**
 ```tsx
-import { Button } from '@/components/base/button'
-import { Card } from '@/components/branded/card' // when available
+import { Button } from '@/components/ui/button'
+import { Card } from '@/components/custom/card' // when available
 ```
 
 **Option B: Copy to your own project**
 ```bash
 # Copy the component you need
-cp components/base/button.tsx your-project/components/
+cp components/ui/button.tsx your-project/components/
 ```
 
 ### 3. Pull Latest Updates
@@ -54,27 +54,27 @@ git pull origin master
 
 ## 📦 Available Components
 
-### Base Components (shadcn/ui)
-Located in `components/base/`:
+### UI Components (shadcn/ui)
+Located in `components/ui/`:
 - ✅ Button
 - ✅ Card
 - ✅ Input
 - ✅ Label
 
-### Branded Components (Figma Exports)
-Located in `components/branded/`:
+### Custom Components (Figma Exports)
+Located in `components/custom/`:
 - *Coming soon - designers will add custom-styled components here*
 
 ---
 
-## 🔧 Adding New Base Components
+## 🔧 Adding New UI Components
 
 **For repository maintainers only:**
 ```bash
 npx shadcn@latest add [component-name]
 ```
 
-Components will automatically be added to `components/base/`
+Components will automatically be added to `components/ui/`
 
 ---
 
@@ -105,7 +105,7 @@ Product Managers & Developers pull updates
 - Report issues or request new components
 
 ### ❌ DON'T:
-- Modify files in `components/base/` or `components/branded/`
+- Modify files in `components/ui/` or `components/custom/`
 - Push directly to master (use pull requests)
 - Create custom versions of existing components
 

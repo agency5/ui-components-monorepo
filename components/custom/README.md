@@ -1,4 +1,4 @@
-# Branded Components - Designer Workflow
+# Custom Components - Designer Workflow
 
 ## Overview
 This folder contains brand-customized UI components exported from Figma. These components layer on top of the base shadcn/ui components with your brand styling.
@@ -13,7 +13,7 @@ This folder contains brand-customized UI components exported from Figma. These c
 ### Step 2: Push to GitHub
 1. Open terminal in the repository folder
 2. Switch to design branch: `git checkout design`
-3. Add your new component file to `components/branded/`
+3. Add your new component file to `components/custom/`
 4. Commit: `git add . && git commit -m "Added [ComponentName] from Figma"`
 5. Push: `git push origin design`
 
@@ -35,7 +35,7 @@ Once approved and merged, the component is available to all developers.
 
 Import components like this:
 \`\`\`tsx
-import { BrandedButton } from '@/components/branded/button'
+import { BrandedButton } from '@/components/custom/button'
 \`\`\`
 
 To request component changes, contact the design team.
@@ -45,4 +45,4 @@ To request component changes, contact the design team.
 ## Current Components
 (Designer: Update this list when adding components)
 
-- *No branded components yet - waiting for first Figma export*
+- *No Custom Components yet - waiting for first Figma export*
